@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Registration</title>
+    <style>
+        h1{
+            color: chocolate;
+            background-color: bisque;
+        }
+        fieldset
+        {
+            background-color: bisque;
+            width:40%;
+            margin: auto;
+        }
+        textarea{
+            width:70%;
+        }
+        body{
+            background-color: rgb(241, 232, 222);
+        }
+    </style>
+</head>
+<body align="center">
+    <h1> Sports Registration form</h1>
+    <form  action="http://127.0.0.1:5500/actionform.html" target="_blank">
+        <fieldset>
+            <legend>Details:</legend>
+        <p>
+           <b>First Name:</b>
+            <input type="text" required/>
+        </p>
+        <p>
+            <b>Last Name:</b>
+            <input type="text" required/>
+        </p>
+        <p>
+            <b>Email Id:</b>
+            <input type="email" placeholder="bob113@gmail.com"/>
+        </p>
+        <p>
+            <b>Date of Birth:</b>
+            <input type="date"/>
+        </p>
+        <p>
+            <b>Mobile number:</b>
+            <input type="tel"/>
+        </p>
+        <label> <b>Gender:</b></label>
+        Male 
+        <input type="radio" checked=true name="user_gender"> 
+        Female 
+        <input type="radio"  name="user_gender">
+        Others
+        <input type="radio" name="user_gender">
+        <div style="margin-top: 15px;">
+        <label><b>Sports</b></label>
+        <select>
+            <option value=""></option>
+            <option value="Cricket">Cricket</option>
+            <option value="Foot Ball">Foot Ball</option>
+            <option value="Badminton">Badminton</option>
+            <option value="Volleyball">Volleyball</option>
+        </select>
+        <label><b>Level</b></label>
+        <select>
+            <option value=""></option>
+            <option value="District">District</option>
+            <option value="State">State</option>
+            <option value="National">National</option>
+
+        </select></div>
+        <p>
+           <b>Physical Fitness Certificate:</b>
+            <input type="file"/>
+        </p>
+        <p>
+            <b>Parent's Name:</b>
+            <input type="text"/>
+        </p>
+        <p>
+            <b>Parent's Contact:</b>
+            <input type="tel"/>
+        </p>
+        <label>
+            <b>Attending event on:</b>
+            10th Jan 2024
+            <input type="radio" checked="true" name="date">
+            13th Jan 2024
+            <input type="radio" name="date">
+        </label>
+        <p><b>Additional Comments:</p></h3>
+        <textarea rows="4" cols="100"></textarea><br>
+        <div style="margin-top: 4%;">
+       <input type="submit">
+       <input type="reset">
+    </div>
+    </fieldset>
+    </form>
+</body>
+</html>
